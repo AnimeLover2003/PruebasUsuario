@@ -1,49 +1,48 @@
-<div class="main-container">
+<div class="plan-management-container">
 
-    <h1>Ver planes disponibles</h1>
-    <h6>Visualiza los planes comerciales disponibles</h6>
-    <p>Estos son los planes comerciales disponibles en este momento, puedes agregar nuevos o editar los existentes presionando sobre los 3 puntos verticales.</p>
+    <h1 class="page-title">Ver planes disponibles</h1>
+    <h8 class="page-subtitle">Visualiza los planes comerciales disponibles</h8>
+    <p class="page-description">Estos son los planes comerciales disponibles en este momento, puedes agregar nuevos o editar los existentes presionando sobre los 3 puntos verticales.</p>
 
     <section class="form-section">
         <h5 class="section-label">Punto a adicionar a la ruta de labor : Identificador Ruta</h5>
         
-        <div class="inputs-group">
-            <p class="input-container">Label Name
-    <input type="text" placeholder="Enter your name" name="text" id="text" class="input-field" autocomplete="name">
-    <label class="input-label" for="text">Name</label>
-</p>
+        <div class="input-group">
+            <div class="input-field-container">
+                <input type="text" placeholder="Enter your name" name="route-id" id="route-id" class="text-input" autocomplete="name">
+                <label class="input-label" for="route-id">Identificador de Ruta</label>
+            </div>
             
-            <p class="input-container">Label Name
-    <input type="text" placeholder="Enter your name" name="text" id="text" class="input-field" autocomplete="name">
-    <label class="input-label" for="text">Name</label>
-</p>
+            <div class="input-field-container">
+                <input type="text" placeholder="Enter location" name="location" id="location" class="text-input" autocomplete="off">
+                <label class="input-label" for="location">Ubicación</label>
+            </div>
             
-            <p class="input-container">Label Name
-    <input type="text" placeholder="Enter your name" name="text" id="text" class="input-field" autocomplete="name">
-    <label class="input-label" for="text">Name</label>
-</p>
+            <div class="input-field-container">
+                <input type="text" placeholder="Enter details" name="details" id="details" class="text-input" autocomplete="off">
+                <label class="input-label" for="details">Detalles</label>
+            </div>
             
-            <h5 class="info-text">Agrega aquí tus inputs</h5>
+            <p class="input-hint">Agrega aquí tus inputs</p>
         </div>
     </section>
 
     <section class="form-section">
         <h5 class="section-label">Punto a adicionar a la ruta de labor : Identificador Ruta</h5>
         
-  <div class="checkbox-text">
-    <div class="checkbox" [class.checked]="checked" (click)="toggle()">
-    <svg *ngIf="checked" class="check-icon" viewBox="0 0 24 24">
-      <path d="M5 13l4 4L19 7" />
-    </svg>
-  </div>
-    <span class="label">Sí, puede ser no codificado</span>
-  </div>
-  
+        <div class="checkbox-container">
+            <div class="custom-checkbox" [class.checked]="checked" (click)="toggle()">
+                <svg *ngIf="checked" class="check-icon" viewBox="0 0 24 24">
+                    <path d="M5 13l4 4L19 7" />
+                </svg>
+            </div>
+            <span class="checkbox-label">Sí, puede ser no codificado</span>
+        </div>
     </section>
 
-    <div class="buttons-container">
-        <button class="b1">button</button>
-        <button class="b2">button</button>
+    <div class="action-buttons">
+        <button class="primary-button">Guardar cambios</button>
+        <button class="secondary-button">Cancelar</button>
     </div>
 
 </div>
