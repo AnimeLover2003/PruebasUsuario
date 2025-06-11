@@ -1,0 +1,10 @@
+@use "../../../styles/colors" as colors;
+.base-card {
+    background-color: colors.$primary-white-bg;
+    padding: 20px;
+}
+
+.but {
+    display: flex;
+    flex-direction: column;
+}
