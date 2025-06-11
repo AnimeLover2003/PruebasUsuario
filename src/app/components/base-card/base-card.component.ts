@@ -13,5 +13,4 @@ import { ButtonComponent } from '../button/button.component';
   styleUrl: './base-card.component.scss'
 })
 export class BaseCardComponent {
-  
 }
