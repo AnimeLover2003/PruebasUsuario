@@ -28,4 +28,5 @@ const meta: Meta<BaseCardComponent> = {
 export default meta;
 type Story = StoryObj<BaseCardComponent>;
 
+
 export const Default: Story = {};

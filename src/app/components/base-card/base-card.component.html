@@ -1,59 +1,53 @@
-<div class="main-container">
+<div class="route-form">
 
-    <storybook-header-momentos 
-        title="Ver planes disponibles">
-    </storybook-header-momentos>
+  <storybook-header-momentos title="Opciones de Planes"/>
 
-    <section class="form-section">
-        <h5 class="section-label">Punto a adicionar a la ruta de labor : Identificador Ruta</h5>
-        
-        <div class="inputs-group">
-            <app-input 
-                label="Label Name" 
-                placeholder="Placeholder" 
-                type="textField">
-            </app-input>
-            
-            <app-input 
-                label="Label Name" 
-                placeholder="Placeholder" 
-                type="textField">
-            </app-input>
-            
-            <app-input 
-                label="Label Name" 
-                placeholder="Placeholder" 
-                type="textField">
-            </app-input>
-            
-            <h5 class="info-text">Agrega aquí tus inputs</h5>
-        </div>
-    </section>
+  <div class="form-section">
+    
+    <fieldset>
+      <legend>Punto en Ruta Laboral: ID Ruta</legend>
+      
+      <app-input 
+        label="Campo" 
+        placeholder="Escribe aquí..." 
+        type="textField" 
+        showIcon/>
+      
+      <app-input 
+        label="Campo" 
+        placeholder="Escribe aquí..." 
+        type="textField" 
+        showIcon/>
+      
+      <app-input 
+        label="Campo" 
+        placeholder="Escribe aquí..." 
+        type="textField" 
+        showIcon/>
 
-    <section class="form-section">
-        <h5 class="section-label">Punto a adicionar a la ruta de labor : Identificador Ruta</h5>
-        
-        <storybook-checkbox-text 
-            label="Sí, puede ser no codificado">
-        </storybook-checkbox-text>
-    </section>
+      <p class="hint">(+) Añade más campos si es necesario</p>
+    </fieldset>
 
-    <div class="buttons-container">
-        <app-button 
-            label="button" 
-            width="100%" 
-            color="primary" 
-            styles="filled" 
-            state="active">
-        </app-button>
-        
-        <app-button 
-            label="button" 
-            width="100%" 
-            color="error" 
-            styles="text" 
-            state="active">
-        </app-button>
+    <div class="option-box">
+      <storybook-checkbox-text label="Aceptar no codificado"/>
     </div>
+
+  </div>
+
+  <div class="action-bar">
+    <app-button 
+      label="Confirmar" 
+      full-width 
+      primary 
+      filled 
+      active/>
+    
+    <app-button 
+      label="Cancelar" 
+      full-width 
+      error 
+      text 
+      active/>
+  </div>
 
 </div>
