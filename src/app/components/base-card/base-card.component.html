@@ -1,53 +1,49 @@
-<div class="route-form">
+<div class="main-container">
 
-  <storybook-header-momentos title="Opciones de Planes"/>
+    <h1>Ver planes disponibles</h1>
+    <h6>Visualiza los planes comerciales disponibles</h6>
+    <p>Estos son los planes comerciales disponibles en este momento, puedes agregar nuevos o editar los existentes presionando sobre los 3 puntos verticales.</p>
 
-  <div class="form-section">
-    
-    <fieldset>
-      <legend>Punto en Ruta Laboral: ID Ruta</legend>
-      
-      <app-input 
-        label="Campo" 
-        placeholder="Escribe aquí..." 
-        type="textField" 
-        showIcon/>
-      
-      <app-input 
-        label="Campo" 
-        placeholder="Escribe aquí..." 
-        type="textField" 
-        showIcon/>
-      
-      <app-input 
-        label="Campo" 
-        placeholder="Escribe aquí..." 
-        type="textField" 
-        showIcon/>
+    <section class="form-section">
+        <h5 class="section-label">Punto a adicionar a la ruta de labor : Identificador Ruta</h5>
+        
+        <div class="inputs-group">
+            <p class="input-container">Label Name
+    <input type="text" placeholder="Enter your name" name="text" id="text" class="input-field" autocomplete="name">
+    <label class="input-label" for="text">Name</label>
+</p>
+            
+            <p class="input-container">Label Name
+    <input type="text" placeholder="Enter your name" name="text" id="text" class="input-field" autocomplete="name">
+    <label class="input-label" for="text">Name</label>
+</p>
+            
+            <p class="input-container">Label Name
+    <input type="text" placeholder="Enter your name" name="text" id="text" class="input-field" autocomplete="name">
+    <label class="input-label" for="text">Name</label>
+</p>
+            
+            <h5 class="info-text">Agrega aquí tus inputs</h5>
+        </div>
+    </section>
 
-      <p class="hint">(+) Añade más campos si es necesario</p>
-    </fieldset>
+    <section class="form-section">
+        <h5 class="section-label">Punto a adicionar a la ruta de labor : Identificador Ruta</h5>
+        
+  <div class="checkbox-text">
+    <div class="checkbox" [class.checked]="checked" (click)="toggle()">
+    <svg *ngIf="checked" class="check-icon" viewBox="0 0 24 24">
+      <path d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+    <span class="label">Sí, puede ser no codificado</span>
+  </div>
+  
+    </section>
 
-    <div class="option-box">
-      <storybook-checkbox-text label="Aceptar no codificado"/>
+    <div class="buttons-container">
+        <button class="b1">button</button>
+        <button class="b2">button</button>
     </div>
-
-  </div>
-
-  <div class="action-bar">
-    <app-button 
-      label="Confirmar" 
-      full-width 
-      primary 
-      filled 
-      active/>
-    
-    <app-button 
-      label="Cancelar" 
-      full-width 
-      error 
-      text 
-      active/>
-  </div>
 
 </div>

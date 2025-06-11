@@ -18,15 +18,11 @@ const meta: Meta<BaseCardComponent> = {
   }),
   argTypes: {
     // Define controles personalizados (opcional)
-    content: {
-      control: 'text',
-      description: 'Contenido proyectado dentro de la card',
-    },
+
   },
 };
 
 export default meta;
 type Story = StoryObj<BaseCardComponent>;
-
 
 export const Default: Story = {};

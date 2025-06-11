@@ -1,17 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderMomentosComponent } from '../header/header-momentos/header-momentos.component';
-import { InputComponent } from '../input/input.component';
-import { CheckboxTextComponent } from '../Checkbox/CheckboxText/CheckboxText.component';
-import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-base-card',
   standalone: true,  
-  imports: [CommonModule, HeaderMomentosComponent, InputComponent, CheckboxTextComponent, ButtonComponent],
+  imports: [CommonModule],
   templateUrl: './base-card.component.html',
   styleUrl: './base-card.component.scss'
 })
 export class BaseCardComponent {
-  
+  @Input() checked: boolean = false;
+  @Output() checkedChange = new EventEmitter<boolean>();
+
+  toggle() {
+    this.checked = !this.checked;
+    this.checkedChange.emit(this.checked);
+  }
+
 }
